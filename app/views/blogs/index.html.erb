@@ -1,0 +1,18 @@
+<div class="contents row">
+  <% @bloogs.each do |bloog| %>
+ <div class=container>
+  <%= simple_format(bloog.text) %>
+  <div class="edit-box">
+     <% if user_signed_in? && current_user.id == bloog.user_id %>
+     <%= link_to 'SHOW',"/blogs/#{bloog.id}", method: :get, class:"a" %>
+     <%= link_to 'EDIT',"/blogs/#{bloog.id}/edit", method: :get, class:"a" %>  
+     <%= link_to 'DESTROY',"/blogs/#{bloog.id}", method: :delete, data: {confirm: "本当に削除しますか？"}, class:"a" %>
+      <% else %>
+      <%= link_to 'SHOW',"/blogs/#{bloog.id}", method: :get, class:"a" %>
+      <% end %>
+    </div>
+  </div>
+  <% end %>
+   <%= paginate(@bloogs) %>
+</div>
+

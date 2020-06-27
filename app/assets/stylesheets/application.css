@@ -1,0 +1,148 @@
+html {
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+  height: 60px;
+  background-color: #008b8b; 
+  width:100%;
+}
+
+.background {
+  display: flex
+}
+
+.title {
+  width:70%;
+  height:60px;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 5px 0 0 30px; 
+}
+
+.title a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none; 
+}
+  
+.sign-box {
+  width: 30%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+
+}
+.sign-box a{
+    text-decoration: none; 
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.contents.row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 0;
+    max-width: 80%;
+}
+
+.container{
+  padding:30px 25px 20px 25px; 
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.edit-box{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.edit-box>.btn,.a{
+  width: 100px;
+  padding:6px;
+  margin:5px;
+  border-radius: 4px;
+  background-color: #008b8b;
+  color:#fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+.container h3{
+  text-align: center;
+  color:#c0c0c0;
+}
+
+.container textarea{
+  width: 100%;
+}
+
+#btn{
+  width: 100px;
+  padding:6px;
+  margin:5px;
+  border-radius: 4px;
+  background-color: #008b8b;
+  color:#fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.success{
+  margin-top: 40px;
+  text-align: center
+}
+
+.success h2{
+  color:#c0c0c0;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.success a{
+  text-align: center;
+  width: 100px;
+  padding:6px;
+  border-radius: 4px;
+  background-color: #008b8b;
+  color:#fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+h2{
+  text-align: center;
+}
+
+.field,.actions{
+    text-align: center;
+}
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

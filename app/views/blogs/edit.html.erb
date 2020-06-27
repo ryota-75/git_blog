@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+  <%= form_tag("/blogs/#{@blog.id}", method: :patch) do %>
+  <h3>
+    編集する
+  </h3>
+  <textarea name="text" rows="10" cols="100"><%= @blog.text %></textarea>
+  <input id="btn"type="submit" value="送信">
+  <% end %>
+  </div>
+</div>
